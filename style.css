@@ -1,0 +1,305 @@
+/* GENERAL */
+@font-face {
+    font-family: OswaldMedium;
+    src: url(fonts/Oswald-Medium.ttf);
+}
+@font-face {
+    font-family: OswaldRegular;
+    src: url(fonts/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: OswaldSemiBold;
+    src: url(fonts/Oswald-SemiBold.ttf);
+}
+@font-face {
+    font-family: OswaldLight;
+    src: url(fonts/Oswald-Light.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: OswaldMedium;
+    font-weight: 500;
+}
+html {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+} 
+body::-webkit-scrollbar-thumb {
+    background-color: #FF3A20;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+/* HEADER */
+
+header {
+    background: black;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+}
+.logo {
+    background-image: url(images/logosimple.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+/* MAIN */
+
+main {
+    background-color: black;
+    margin: 0 auto;
+    width: 1320px;
+    padding: 100px;
+}
+main h2 {
+    color: #f1fec6;
+    margin-top: 8px;
+    font-size: 60px;
+    text-align: center;
+}
+main h1 {
+    color: #f1fec6;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    width: 300px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    display: flex;
+    font-family: OswaldRegular;
+    color: #f1fec6;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 83px;
+    text-decoration: none;
+}
+a:hover {
+    color: #FF3A20;
+    text-decoration: line-through;
+}
+.record {
+    background-image: url("images/record.png");
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    transition: all .3s ease;
+}
+.range {
+    display: flex;
+    color: #f1fec6;
+    text-align: center;
+    font-size: 86px;
+    transition: all .3s ease;
+}
+.record:hover {
+    transition: all .3s ease;
+    transform: rotate(360deg);
+}
+.record:hover .range{
+    transition: all .3s ease;
+    transform: rotate(-360deg);
+}
+.range:hover {
+    color: #FF3A20;
+    text-decoration: line-through;
+}
+.available {
+    margin-top: 150px;
+}
+.background-product {
+    margin-top: 100px;
+}
+.taboo {
+    background-image: url(images/cards/taboo.png);
+}
+.blankface {
+    background-image: url(images/cards/blankface.png);
+}
+.dicaprio {
+    background-image: url(images/cards/dicaprio2.png);
+}
+.ethereal {
+    background-image: url(images/cards/ethereal.png);
+}
+.ignorance {
+    background-image: url(images/cards/ignorance.png);
+}
+.heavenorhell {
+    background-image: url(images/cards/heavenorhell.png);
+}
+.imperial {
+    background-image: url(images/cards/imperial.png);
+}
+.lifeofadarkrose {
+    background-image: url(images/cards/lifeofadarkrose.png);
+}
+.lifeofadon {
+    background-image: url(images/cards/lifeofadon.png);
+}
+.luvisrage {
+    background-image: url(images/cards/luvisrage.png);
+}
+.melodicblue {
+    background-image: url(images/cards/melodicblue.png);
+}
+.practice {
+    background-image: url(images/cards/practice.png);
+}
+.sincity {
+    background-image: url(images/cards/sincity.png);
+}
+.stokeley {
+    background-image: url(images/cards/stokeley.png);
+}
+.planetshrooms {
+    background-image: url(images/cards/planetshrooms.png);
+}
+.cover {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    margin-top: -300px;
+    transition: all .3s ease;
+}
+.dop {
+    padding-top: 120px;
+}
+.cover p {
+    font-size: 30px;
+    text-align: center;
+}
+.layer1 { /*2222222222222222222222222222222222222222222222222222222 */
+    transform: rotate3d(0,1,0,180deg);
+    transition: all .3s ease;
+    width: 500px;
+    margin-left: -100px;
+}
+.layer2 { /*1111111111111111111111111111111111111111111111111111111 */
+    color: white;
+    margin-top: -43px;
+    transform: rotate3d(0,0,0,0);
+    transition: all .3s ease;
+    width: 500px;
+    margin-left: -100px;
+}
+.hoverrecord {
+    /* background-color: rgb(255, 255, 255, 0.5); */
+    background-image: url(images/record.png);
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+}
+.cover:hover{
+    transform: translateX(-80px);
+    transition: all .3s ease;
+}
+.cover:hover .layer1{
+    transform: translateY(-80px);
+    transition: all .3s ease;
+}
+.cover:hover .layer2 {
+    transition: all .3s ease;
+    transform: rotate3d(0,1,0,180deg) translateY(100px);
+}
+.tocard {
+    text-align: center;
+}
+.tocartb {
+    border: none;
+    background-color: rgb(0,0,0,0);
+    color: #f1fec6;
+    font-family: OswaldMedium;
+    font-size: 36px;
+    vertical-align: middle;
+    margin-top: -63px;
+    opacity: 0;
+    transition: all .3s ease;
+    transform: rotate3d(0,1,0,180deg);
+    cursor: pointer;
+}
+.price {
+    font-size: 36px;
+    color: #f1fec6;
+    margin-top: -63px;
+    opacity: 0;
+    transition: all .3s ease;
+    transform: rotate3d(0,1,0,180deg);
+}
+.cover:hover .tocartb {
+    opacity: 1;
+    transform: rotate3d(0,1,0,0deg) translateY(30px);
+}
+.cover:hover .price {
+    opacity: 1;
+    transform: rotate3d(0,1,0,0deg) translateY(-30px);
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.tocartb:hover {
+    background-color: #f1fec6;
+    color:rgb(0,0,0);
+    padding: 2px 24px;
+}
+/* FOOTER */
+footer {
+    background-color: #333;
+    width: 1320px;
+    margin: 0 auto;
+    padding: 60px 100px;
+}
+footer p {
+    text-align: center;
+    color: #FF3A20;
+    font-family: OswaldLight;
+    font-size: 18px;
+}
+.footernav {
+    display: flex;
+    gap: 30px;
+    width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.footernav a {
+    font-family: OswaldLight;
+    font-size: 18px;
+    text-align: center;
+    color: #FF3A20;
+}
